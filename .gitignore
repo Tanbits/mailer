@@ -1,24 +1,27 @@
-# Compiled Object files
-*.o
-*.obj
+# The directory Mix will write compiled artifacts to.
+/_build/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
 
-# Compiled Static libraries
-*.a
-*.lib
+# The directory Mix downloads your dependencies sources to.
+/deps/
 
-# Executables
-*.exe
+# Where third-party dependencies like ExDoc output generated docs.
+/doc/
 
-# DUB
-.dub
-docs.json
-__dummy.html
-docs/
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
 
-# Code coverage
-*.lst
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
+
+# Ignore package tarball (built via "mix hex.build").
+mailer-*.tar
+
+
+# Temporary files for e.g. tests
+/tmp
